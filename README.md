@@ -54,6 +54,16 @@ Launch template is a kind of structure of the EC2 instances that includes all th
 
  2. Click on the Create Auto Scaling group to create a new auto-scaling group.  
   
+ ![autogroup 2](https://user-images.githubusercontent.com/103466963/174808399-ac9c5753-889f-4069-a993-d14642e4f2da.png)
+
+ 3. Enter the name of the auto-scaling group and select the launch template created in the previous step. You can also switch to launch configuration instead of launch template by clicking on the Switch to launch configuration, but we will stick to the launch template for this blog.
+
+ ![autogroup 3](https://user-images.githubusercontent.com/103466963/174808733-f76da9d8-14a4-4a64-a81a-5f6ac9cce42a.png)
+
+4. Click on the Next button after entering the above details, and it will ask for the instant purchase option and network details. Select the Adhere to launch template as an instant purchase option.
+  
+ ![autogroup 4](https://user-images.githubusercontent.com/103466963/174809238-d94bb9f1-f2fc-45dd-80ec-d3e49ec2673a.png)
+
   
   
   
