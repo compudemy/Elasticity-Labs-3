@@ -26,6 +26,12 @@ Launch template is a kind of structure of the EC2 instances that includes all th
   
 ![autoscale 4](https://user-images.githubusercontent.com/103466963/174793622-952029d1-6b84-4b58-8df1-7a9cf16f7122.png)
 
+5. Click on the Create launch template button to create a new launch template, and it will open a form asking for different parameters for the launch template.  
+  
+6. Enter the Launch template name under the Launch template name and description section.  
+  
+ ![autoscale 5](https://user-images.githubusercontent.com/103466963/174794427-4a4121f1-0f49-403b-ac41-3c8d19491c85.png)
+  
   
   
   
