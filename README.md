@@ -48,10 +48,11 @@ Launch template is a kind of structure of the EC2 instances that includes all th
 
 ### Step 2: Create an auto-scaling group from the launch template  
   
-  After creating the launch template, now create the auto-scaling group from the launch template. From the left side panel, click on the Auto Scaling Groups under the Auto Scaling section.
+ 1. After creating the launch template, now create the auto-scaling group from the launch template. From the left side panel, click on the Auto Scaling Groups under the Auto Scaling section.
 
-  
+  ![autogroup 1](https://user-images.githubusercontent.com/103466963/174806090-be0aff21-0869-4ffb-a623-6e4ce742489c.png)
 
+ 2. Click on the Create Auto Scaling group to create a new auto-scaling group.  
   
   
   
