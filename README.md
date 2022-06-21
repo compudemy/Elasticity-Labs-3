@@ -154,5 +154,9 @@ Launch template is a kind of structure of the EC2 instances that includes all th
   Conclusion
 Auto scaling group is the feature provided by AWS to create a highly available and scalable infrastructure on AWS cloud. Auto scaling group uses launch template or launch configuration to launch instances to scale the infrastructure on AWS. Launch template includes all the configurations required to launch new instances in the group. Auto scaling group provides different types of target tracking policies used to launch and terminate instances in the group. This guide provides a step-by-step procedure to create, manage and delete an auto-scaling group on AWS.  
   
+  And this is what our Architecture will look like:
+  
+  ![autoscaling 1](https://user-images.githubusercontent.com/103466963/174843502-53d939ca-7042-48f1-945c-d3c71867a3f1.png)
+  
   
   
