@@ -128,6 +128,8 @@ Launch template is a kind of structure of the EC2 instances that includes all th
   ![abi 8](https://user-images.githubusercontent.com/103466963/174823437-2e138624-8307-4159-8a22-debf9d28eb0a.png)
   
  3. Set the desired capacity and the minimum capacity to 0 and click on the Update button at the end of the page.
+  
+  ![zero](https://user-images.githubusercontent.com/103466963/174839561-3269d6c1-3235-49c2-bf27-1bee24561a63.png)
 
  4. It will automatically terminate all the instances launched by the auto scaling group to maintain the size of the group. Go to the instances section to see all the instances available.
   
@@ -135,17 +137,17 @@ Launch template is a kind of structure of the EC2 instances that includes all th
 
  5. Both the instances are terminated, and now the auto-scaling group can be deleted. From the auto scaling group section, select the auto scaling group and click on the Delete button.
   
-  Now it will ask for your confirmation to delete the auto scaling group. Enter delete in the input bar and click on the Delete button to delete the auto scaling group.  
+6.  Now it will ask for your confirmation to delete the auto scaling group. Enter delete in the input bar and click on the Delete button to delete the auto scaling group.  
   
   ![abi 10](https://user-images.githubusercontent.com/103466963/174837616-faf26212-4081-443d-807a-a77266476dea.png)
  
-  After deleting the auto scaling group, go to the launch template section to delete the launch template.
+7.  After deleting the auto scaling group, go to the launch template section to delete the launch template.
 
-  Select the launch template and click on the Actions button. It will display a list of different options. Select the Delete template option from the list.
+8.  Select the launch template and click on the Actions button. It will display a list of different options. Select the Delete template option from the list.
 
   ![delete 1](https://user-images.githubusercontent.com/103466963/174838108-61ed2121-b5d1-4d9a-86ea-5896a08c570d.png)
   
- Now it will ask for confirmation before deleting the launch template. Enter delete in the input bar and click on the Delete button to delete the launch template.
+9.  Now it will ask for confirmation before deleting the launch template. Enter delete in the input bar and click on the Delete button to delete the launch template.
   
   ![delete 2](https://user-images.githubusercontent.com/103466963/174838378-a3538b01-2b2f-4ca8-b927-aaf3327845ce.png)
 
