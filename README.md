@@ -87,14 +87,18 @@ Launch template is a kind of structure of the EC2 instances that includes all th
   
  ![autogroup 8](https://user-images.githubusercontent.com/103466963/174815668-70be1328-6074-46a5-916d-67c20d53b133.png)
 
+ The above configuration will maintain a minimum of 1 instance running. Whenever the instance dies, the auto-scaling group will automatically launch a new instance. Also, when the load on the instance reaches more than 10%, the auto-scaling group will automatically launch a new instance. The auto-scaling group will not launch more than 3 instances at a time even if the load is more than 10% on all the instances as we have specified a maximum number of 3 instances.
   
+  Now click on the Skip to review button to skip the remaining steps and click on the Create auto scaling group button at the end of the page after reviewing the configuration to create the auto scaling group.
   
-  
+### Step 4: Test auto scaling group
 
-  
-  
+  After creating the auto scaling group, it will launch one EC2 instance as we have specified the desired capacity to be one EC2 instance. The auto scaling group can be tested by either terminating the instance or increasing the CPU utilization of the instance.
 
+1. First, we will test the auto scaling group by terminating the EC2 instance. From the left side of the panel, select the Instances under the INSTANCES section.
   
+2. Select the instance launched by the auto scaling group and click on the Instance state button on the top right corner. It will open a list, click on the Terminate instance to terminate the instance manually.
   
-  
+  ![abi 2](https://user-images.githubusercontent.com/103466963/174820354-80df2191-3a42-487a-af52-68af51ff47dc.png)
+  After 3 minutes of terminating the instance, the auto-scaling group will launch a new instance.  
   
