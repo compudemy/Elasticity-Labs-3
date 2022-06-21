@@ -7,7 +7,7 @@
   
 Also Auto scaling group is a feature of EC2 instances on AWS. An auto-scaling group consists of several EC2 instances, which can increase or decrease in numbers depending upon the scaling policy attached to the group. Auto scaling group monitors the health and load on the instances in the group, and depending upon the policy, it launches or terminates the instances to maintain a specific number of instances in the group. Auto-scaling groups are used to deploy a highly available and scalable infrastructure on AWS. In this guide, we will discuss the following steps to configure auto-scaling groups.
   
-###  Create a launch template
+### Step 1:Create a launch template
 Launch template is a kind of structure of the EC2 instances that includes all the instances’ details and parameters. All the instances in the auto-scaling group are launched using either the launch template or the launch configuration. Launch templates are newer to AWS than launch configuration and have more options to customize the EC2 instance configuration. That is why, in this blog, the launch template will be used to create an auto-scaling group.  
   
   In order to create a launch template, 
@@ -36,7 +36,23 @@ Launch template is a kind of structure of the EC2 instances that includes all th
 
   ![autoscale 6](https://user-images.githubusercontent.com/103466963/174795313-92749aeb-9f2f-4259-a1ad-650144969ba4.png)
   
-7. 
+7. Select the specific Key pair you want to use while logging into your server over SSH. If you do not have any key, create one by clicking on the Create new key pair.
+  
+  ![autoscale 7](https://user-images.githubusercontent.com/103466963/174797078-8d6b3cbd-901c-44be-8105-91213aea4d44.png)
+
+8. Under the Network settings, select the Networking platform and security groups.
+
+ ![autoscale 9](https://user-images.githubusercontent.com/103466963/174797591-35f5db33-f7d6-4b36-9315-1bcf73c0340d.png)
+
+  Leave the rest of the parameters default and click on the create launch template button to create the launch template.
+
+### Step 2: Create an auto-scaling group from the launch template  
+  
+  After creating the launch template, now create the auto-scaling group from the launch template. From the left side panel, click on the Auto Scaling Groups under the Auto Scaling section.
+
+  
+
+  
   
   
   
