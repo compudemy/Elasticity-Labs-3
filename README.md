@@ -117,7 +117,7 @@ Launch template is a kind of structure of the EC2 instances that includes all th
 
 ![abi 6](https://user-images.githubusercontent.com/103466963/174822819-8758443d-6bc9-47a6-b7a0-d3908708fc07.png)
   
-  ### Step 4 : Delete auto scaling group
+  ### Step 5: Delete auto scaling group
 
   This section will discuss how we can delete the auto scaling group on AWS, as whenever an instance is deleted, the auto scaling group will create another instance to maintain a specific number of instances. In order to delete the auto-scaling group,
   
