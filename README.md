@@ -133,19 +133,24 @@ Launch template is a kind of structure of the EC2 instances that includes all th
   
   ![mine](https://user-images.githubusercontent.com/103466963/174836648-d9896ba4-52ab-48a3-984c-a685d7353bcb.png)
 
-  Both the instances are terminated, and now the auto-scaling group can be deleted. From the auto scaling group section, select the auto scaling group and click on the Delete button.
-
+ 5. Both the instances are terminated, and now the auto-scaling group can be deleted. From the auto scaling group section, select the auto scaling group and click on the Delete button.
+  
   Now it will ask for your confirmation to delete the auto scaling group. Enter delete in the input bar and click on the Delete button to delete the auto scaling group.  
   
+  ![abi 10](https://user-images.githubusercontent.com/103466963/174837616-faf26212-4081-443d-807a-a77266476dea.png)
+ 
+  After deleting the auto scaling group, go to the launch template section to delete the launch template.
+
+  Select the launch template and click on the Actions button. It will display a list of different options. Select the Delete template option from the list.
+
+  ![delete 1](https://user-images.githubusercontent.com/103466963/174838108-61ed2121-b5d1-4d9a-86ea-5896a08c570d.png)
   
- Now it will ask for your confirmation to delete the auto scaling group. Enter delete in the input bar and click on the Delete button to delete the auto scaling group.
+ Now it will ask for confirmation before deleting the launch template. Enter delete in the input bar and click on the Delete button to delete the launch template.
   
-  
-  
-  
-  
-  
-  
+  ![delete 2](https://user-images.githubusercontent.com/103466963/174838378-a3538b01-2b2f-4ca8-b927-aaf3327845ce.png)
+
+  Conclusion
+Auto scaling group is the feature provided by AWS to create a highly available and scalable infrastructure on AWS cloud. Auto scaling group uses launch template or launch configuration to launch instances to scale the infrastructure on AWS. Launch template includes all the configurations required to launch new instances in the group. Auto scaling group provides different types of target tracking policies used to launch and terminate instances in the group. This guide provides a step-by-step procedure to create, manage and delete an auto-scaling group on AWS.  
   
   
   
