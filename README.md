@@ -100,5 +100,19 @@ Launch template is a kind of structure of the EC2 instances that includes all th
 2. Select the instance launched by the auto scaling group and click on the Instance state button on the top right corner. It will open a list, click on the Terminate instance to terminate the instance manually.
   
   ![abi 2](https://user-images.githubusercontent.com/103466963/174820354-80df2191-3a42-487a-af52-68af51ff47dc.png)
+  
   After 3 minutes of terminating the instance, the auto-scaling group will launch a new instance.  
+ 
+  ![abi 3](https://user-images.githubusercontent.com/103466963/174820354-80df2191-3a42-487a-af52-68af51ff47dc.png)
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
   
