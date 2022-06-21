@@ -129,7 +129,8 @@ Launch template is a kind of structure of the EC2 instances that includes all th
   
  3. Set the desired capacity and the minimum capacity to 0 and click on the Update button at the end of the page.
 
-  
+  ![abi 9](https://user-images.githubusercontent.com/103466963/174835849-7f1eab71-690e-4d18-bcac-e766b5b2b273.png)
+
   It will automatically terminate all the instances launched by the auto scaling group to maintain the size of the group. Go to the instances section to see all the instances available.
 
   Both the instances are terminated, and now the auto-scaling group can be deleted. From the auto scaling group section, select the auto scaling group and click on the Delete button.
@@ -137,7 +138,7 @@ Launch template is a kind of structure of the EC2 instances that includes all th
   Now it will ask for your confirmation to delete the auto scaling group. Enter delete in the input bar and click on the Delete button to delete the auto scaling group.  
   
   
-  
+ Now it will ask for your confirmation to delete the auto scaling group. Enter delete in the input bar and click on the Delete button to delete the auto scaling group.
   
   
   
