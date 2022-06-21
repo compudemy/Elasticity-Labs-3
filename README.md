@@ -82,9 +82,11 @@ Launch template is a kind of structure of the EC2 instances that includes all th
     . Application load balancer request count per target
 
   Auto scaling group monitors the selected metric type of all the instances, and whenever the average target value of the selected metric type goes above the threshold, the auto-scaling group launches more instances to handle the load.
+  
+1. For this demo, select Target tracking scaling policy, enter the Scaling policy name, select Average CPU utilization as Metric type, and 10 as Target value.
+  
+ ![autogroup 8](https://user-images.githubusercontent.com/103466963/174815668-70be1328-6074-46a5-916d-67c20d53b133.png)
 
-  
-  
   
   
   
