@@ -32,7 +32,11 @@ Launch template is a kind of structure of the EC2 instances that includes all th
   
  ![autoscale 5](https://user-images.githubusercontent.com/103466963/174794427-4a4121f1-0f49-403b-ac41-3c8d19491c85.png)
   
+6. Select the AMI under the Amazon machine image and the Instance type under the Instance type section.
+
+  ![autoscale 6](https://user-images.githubusercontent.com/103466963/174795313-92749aeb-9f2f-4259-a1ad-650144969ba4.png)
   
+7. 
   
   
   
