@@ -18,9 +18,14 @@ Launch template is a kind of structure of the EC2 instances that includes all th
   
   ![autoscale 2](https://user-images.githubusercontent.com/103466963/174792371-83521dde-fe68-405a-9512-f633d4571778.png)
   
-Now search for the EC2 service from the management console.
+3. Now search for the EC2 service from the management console.
   
   ![autoscale 3](https://user-images.githubusercontent.com/103466963/174792758-600b1e50-23fc-42c7-a3a0-62d2775205b9.png)
+  
+4. From the left side panel, go to the Launch Templates under the Instances section.
+  
+![autoscale 4](https://user-images.githubusercontent.com/103466963/174793622-952029d1-6b84-4b58-8df1-7a9cf16f7122.png)
+
   
   
   
