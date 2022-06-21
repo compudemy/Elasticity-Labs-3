@@ -101,9 +101,41 @@ Launch template is a kind of structure of the EC2 instances that includes all th
   
   ![abi 2](https://user-images.githubusercontent.com/103466963/174820354-80df2191-3a42-487a-af52-68af51ff47dc.png)
   
-  After 3 minutes of terminating the instance, the auto-scaling group will launch a new instance.  
+3. After 3 minutes of terminating the instance, the auto-scaling group will launch a new instance.  
  
-  ![abi 3](https://user-images.githubusercontent.com/103466963/174820354-80df2191-3a42-487a-af52-68af51ff47dc.png)
+  ![abi 3](https://user-images.githubusercontent.com/103466963/174821881-0169a21f-f449-419e-9a54-30c98cf25671.png)
+
+ Another way to test the auto scaling group is to increase the load on the EC2 instance, as we have configured the CPU utilization as a metric of the scaling policy. Whenever the load on the CPU goes above 10%, the auto-scaling group will launch another EC2 instance. For this purpose, SSH into the EC2 instance and run an infinite loop.
+
+ ![abi 4](https://user-images.githubusercontent.com/103466963/174822157-99054146-0a15-46b3-8cc3-ce75b6954d65.png)
+  
+ 4. On the terminal, run the following command. 
+  
+  ![abi 5](https://user-images.githubusercontent.com/103466963/174822420-6e407243-89c2-40a0-b4b2-0e5e105ea3c1.png)
+
+  It will run an infinite loop, and the CPU utilization will reach a maximum that will trigger the auto-scaling group to launch another instance. Go to the instances section to see the instances.
+
+![abi 6](https://user-images.githubusercontent.com/103466963/174822819-8758443d-6bc9-47a6-b7a0-d3908708fc07.png)
+  
+  ### Step 4 : Delete auto scaling group
+
+  This section will discuss how we can delete the auto scaling group on AWS, as whenever an instance is deleted, the auto scaling group will create another instance to maintain a specific number of instances. In order to delete the auto-scaling group,
+  
+ 1. First edit the desired capacity and a minimum number of instances to 0. Select the Auto Scaling Groups from the EC2 console.
+
+ 2. Select the auto scaling group and click on the Edit button.  
+  
+  ![abi 8](https://user-images.githubusercontent.com/103466963/174823437-2e138624-8307-4159-8a22-debf9d28eb0a.png)
+  
+ 3. Set the desired capacity and the minimum capacity to 0 and click on the Update button at the end of the page.
+
+  
+  It will automatically terminate all the instances launched by the auto scaling group to maintain the size of the group. Go to the instances section to see all the instances available.
+
+  Both the instances are terminated, and now the auto-scaling group can be deleted. From the auto scaling group section, select the auto scaling group and click on the Delete button.
+
+  Now it will ask for your confirmation to delete the auto scaling group. Enter delete in the input bar and click on the Delete button to delete the auto scaling group.  
+  
   
   
   
