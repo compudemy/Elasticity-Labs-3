@@ -63,6 +63,34 @@ Launch template is a kind of structure of the EC2 instances that includes all th
 4. Click on the Next button after entering the above details, and it will ask for the instant purchase option and network details. Select the Adhere to launch template as an instant purchase option.
   
  ![autogroup 4](https://user-images.githubusercontent.com/103466963/174809238-d94bb9f1-f2fc-45dd-80ec-d3e49ec2673a.png)
+  
+5. For the network, select the VPC and subnets you want to deploy instances in. For this blog, we will use default VPC and two subnets. You can select as many subnets as you want.
+
+![autogroup 6](https://user-images.githubusercontent.com/103466963/174810690-b39a39d3-b64c-445d-89c2-8e598d3035bf.png)
+  
+6. After entering the network details, click on the Next button, and it will ask for the advanced options. Click on the Next button without entering or selecting any parameter, and it will ask for group size and scaling policy. Auto scaling group size defines the maximum and the minimum number of instances to be launched in an auto-scaling group and can also be used to maintain a constant number of instances on AWS. Enter the same number for Desired capacity, Minimum capacity, and Maximum capacity to maintain a constant number of instances in the auto-scaling group.
+  
+  For this demo, enter the 1 instance as Desired capacity and Minimum capacity and 3 instances as Maximum capacity.
+
+![autogroup 7](https://user-images.githubusercontent.com/103466963/174814147-88a01be9-dfbf-4ca8-97eb-4e3367deb606.png)
+
+### Step 3: A scaling policy is a set of configurations that decides when to launch or terminate the instances in the auto-scaling group. Scaling policy tracks a target defined using the Metric type and Target value while configuring the scaling policy. Following are the metric types provided by AWS.
+  
+    . Average CPU utilization
+    . Average network in (bytes)
+    . Average network out (bytes)
+    . Application load balancer request count per target
+
+  Auto scaling group monitors the selected metric type of all the instances, and whenever the average target value of the selected metric type goes above the threshold, the auto-scaling group launches more instances to handle the load.
+
+  
+  
+  
+  
+  
+
+  
+  
 
   
   
